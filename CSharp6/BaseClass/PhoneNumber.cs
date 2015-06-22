@@ -10,5 +10,15 @@ namespace CSharp6.BaseClass
     {
         public PhoneType Type { get; set; }
         public string Number { get; set; }
+
+        #region ConstructorAssignament
+
+        //public PhoneNumber(PhoneType type, string number)
+        //{
+        //    Type = type;
+        //    Number = number;
+        //}
+
+        #endregion
     }
 }

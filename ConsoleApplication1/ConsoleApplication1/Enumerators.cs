@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp6.BaseClass
+namespace ConsoleApplication1
 {
-    public enum PhoneType
+    public enum NumberTypeEnum
     {
-        Personal,
-        Office,
-        Home
+        MobilePhone,
+        Fax,
+        Telephone
     }
 }

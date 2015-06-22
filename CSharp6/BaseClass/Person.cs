@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,16 @@ namespace CSharp6.BaseClass
 {
     class Person
     {
+        #region PropertyInitializer
+
+        //public string Name { get; set; } = "Ilary";
+
+        //public string Name { get; } = "Ilary";
+
+        #endregion
+
         public string Name { get; set; }
 
-        #region PropertyInitializer
-        //public string Name { get; set; } = "Prova1";
-        //public string Name { get; } = "Prova1";
-        #endregion
         public string Surname { get; set; }
 
         public PhoneNumber PhoneNumber { get; set; }
@@ -21,7 +26,9 @@ namespace CSharp6.BaseClass
         public string FullName { get { return string.Format("{0} {1}", Name, Surname); } }
 
         #region ExpressionBodyPropertyLike
+
         //public string FullName => string.Format("{0} {1}", Name, Surname);
+
         #endregion
 
         #region StringInterpolation
@@ -29,6 +36,9 @@ namespace CSharp6.BaseClass
         #endregion
 
         #region ConstructorAssignament
+
+        //public string Name { get; }
+        //public string Surname { get; }
 
         //public Person(string name, string surname)
         //{
